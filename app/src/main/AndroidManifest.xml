@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.School"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".attendance_prof"
+            android:exported="false" />
+        <activity
+            android:name=".student_list"
+            android:exported="false" />
+        <activity
+            android:name=".presence_list"
+            android:exported="false" />
+        <activity
+            android:name=".seance_number"
+            android:exported="false" />
+        <activity
+            android:name=".all_classes"
+            android:exported="false" />
+        <activity
+            android:name=".class_planning"
+            android:exported="false" />
+        <activity
+            android:name=".admin"
+            android:exported="false" />
+        <activity
+            android:name=".users"
+            android:exported="false" />
+        <activity
+            android:name=".class_list"
+            android:exported="false" />
+        <activity
+            android:name=".presence_student"
+            android:exported="false" />
+        <activity
+            android:name=".presence_prof"
+            android:exported="false" />
+        <activity
+            android:name=".day_planning"
+            android:exported="false" />
+        <activity
+            android:name=".schedule"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
