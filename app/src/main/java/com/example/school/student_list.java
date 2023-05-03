@@ -156,7 +156,7 @@ public class student_list extends AppCompatActivity {
                     for (int i = 0; i < student.length(); i++) {
                         JSONObject eleve = student.getJSONObject(i);
                         HashMap<String, String> m = new HashMap<String, String>();
-                        m.put("Id", eleve.getString("Id"));
+                        m.put("age", eleve.getString("age"));
                         m.put("name", eleve.getString("name"));
                         m.put("lastname", eleve.getString("lastname"));
 
@@ -164,7 +164,7 @@ public class student_list extends AppCompatActivity {
                     }
                 }
                 SimpleAdapter adapter = new SimpleAdapter(student_list.this, values, R.layout.item_student_list,
-                        new String[]{"Id","name","lastname"},
+                        new String[]{"age","name","lastname"},
                         new int[]{ R.id.lsidstudent , R.id.lsidname , R.id.lsidlastname});
                 ls.setAdapter(adapter);
             } catch (JSONException e) {

@@ -364,15 +364,15 @@ public class presence_list extends AppCompatActivity {
                     for (int i = 0; i < lst.length(); i++) {
                         JSONObject ls = lst.getJSONObject(i);
                         HashMap<String, String> m = new HashMap<String, String>();
-                        m.put("id_student", ls.getString("id_student"));
                         m.put("name", ls.getString("name"));
+                        m.put("jour", ls.getString("jour"));
 
                         values.add(m);
                     }
                 }
                 SimpleAdapter adapter = new SimpleAdapter(presence_list.this, values, R.layout.item_precence_list,
-                        new String[]{"id_student","name"},
-                        new int[]{ R.id.pres_list_name , R.id.pres_list_id});
+                        new String[]{"name","jour"},
+                        new int[]{ R.id.pres_list_name ,R.id.pres_list_jour });
                 ls.setAdapter(adapter);
             } catch (JSONException e) {
                 throw new RuntimeException(e);
