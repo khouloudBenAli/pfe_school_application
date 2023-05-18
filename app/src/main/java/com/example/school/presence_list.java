@@ -39,7 +39,7 @@ public class presence_list extends AppCompatActivity {
             case 0:
                 switch (IndexSeance) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/admin/1AS1.php";
+                        phpFile = "http://192.168.208.154/user/admin/1AS1.php";
                         break;
                     case 1:
                         phpFile = "http://192.168.1.103/user/admin/1AS2.php";
@@ -66,7 +66,7 @@ public class presence_list extends AppCompatActivity {
                         phpFile = "http://192.168.1.103/user/admin/1BS1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/admin/1BS2.php";
+                        phpFile = "http://192.168.208.154/user/admin/1BS2.php";
                         break;
                     case 2:
                         phpFile = "http://192.168.1.103/user/admin/1BS3.php";

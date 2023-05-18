@@ -47,7 +47,7 @@ public class presence_prof extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             HashMap<String,String> map=new HashMap<String,String>();
 
-            JSONObject object= parser.makeHttpRequest("http://192.168.1.103/user/presence/presence_prof.php","GET",map);
+            JSONObject object= parser.makeHttpRequest("http://192.168.208.154/user/presence/presence_prof.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)

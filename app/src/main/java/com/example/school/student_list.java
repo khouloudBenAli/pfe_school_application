@@ -41,10 +41,10 @@ public class student_list extends AppCompatActivity {
             case 0:
                 switch (itemClasse) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_1A.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_1A.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_1B.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_1B.php";
                         break;
 
                     default:
@@ -54,10 +54,10 @@ public class student_list extends AppCompatActivity {
             case 1:
                 switch (itemClasse) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_2A.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_2A.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_2B.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_2B.php";
                         break;
 
                     default:
@@ -67,10 +67,10 @@ public class student_list extends AppCompatActivity {
             case 2:
                 switch (itemClasse) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_3A.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_3A.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_3B.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_3B.php";
                         break;
 
                     default:
@@ -80,10 +80,10 @@ public class student_list extends AppCompatActivity {
             case 3:
                 switch (itemClasse) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_4A.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_4A.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_4B.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_4B.php";
                         break;
 
                     default:
@@ -93,10 +93,10 @@ public class student_list extends AppCompatActivity {
             case 4:
                 switch (itemClasse) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_5A.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_5A.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_5B.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_5B.php";
                         break;
 
                     default:
@@ -106,10 +106,10 @@ public class student_list extends AppCompatActivity {
             case 5:
                 switch (itemClasse) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_6A.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_6A.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/studentlist/student_list_6B.php";
+                        phpFile = "http://192.168.208.154/user/studentlist/student_list_6B.php";
                         break;
 
                     default:

@@ -61,7 +61,7 @@ public class all_classes extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             HashMap<String,String> map=new HashMap<String,String>();
 
-            JSONObject object= parser.makeHttpRequest("http://192.168.1.103/user/classes/all_classes.php","GET",map);
+            JSONObject object= parser.makeHttpRequest("http://192.168.208.154/user/classes/all_classes.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)
