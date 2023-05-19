@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final String[] id_prof = {""};
+
         usernameEditText = findViewById(R.id.username_edit_text);
         passwordEditText = findViewById(R.id.password_edit_text);
         loginButton = findViewById(R.id.login_button);
@@ -51,17 +53,21 @@ public class MainActivity extends AppCompatActivity {
                                     int success = jsonObject.getInt("success");
                                     int type = jsonObject.getInt("type");
                                     String message = jsonObject.getString("message");
-                                    // String typemsg = jsonObject.getString("typemsg");
+
+                                    id_prof[0] = jsonObject.getString("id_prof");
+                                    Intent intent;
                                     if (success == 1) {
                                         if (type == 1) {
                                             // Login successful for admin, navigate to the activity espace
-                                            Intent intent = new Intent(MainActivity.this, admin.class);
+                                             intent = new Intent(MainActivity.this, admin.class);
+                                            intent.putExtra("id_prof", id_prof);
                                             startActivity(intent);
                                             finish();
                                         } else if (type == 2) {
                                             // Login successful for professeur, navigate to the activity espaceProf
-                                            Intent intent = new Intent(MainActivity.this, users.class);
+                                             intent = new Intent(MainActivity.this, users.class);
                                             startActivity(intent);
+                                            //intent.putExtra("id_prof", id_prof);
                                             finish();
                                         } else {
                                             // Login failed, show an error message

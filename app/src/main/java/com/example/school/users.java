@@ -5,17 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.util.Log;
 import android.widget.ImageButton;
 
 public class users extends AppCompatActivity {
 
     ImageButton student_presence , schedule_prof,prof_presence ;
-
+    String id_prof;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users);
+
+        id_prof = getIntent().getStringExtra("id_prof");
+        Log.d("MainActivity", "id_prof: " + id_prof);
 
         schedule_prof=findViewById(R.id.scheduleProf) ;
         prof_presence=findViewById(R.id.PresenceProf) ;
