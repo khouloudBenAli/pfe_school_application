@@ -45,7 +45,7 @@ public class presence_student extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             HashMap<String,String> map=new HashMap<String,String>();
 
-            JSONObject object= parser.makeHttpRequest("http://192.168.208.154/user/presence/presence_student.php","GET",map);
+            JSONObject object= parser.makeHttpRequest("http://192.168.77.192/user/presence/presence_student.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)

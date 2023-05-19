@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,6 +23,7 @@
         app:layout_constraintVertical_bias="0.104"
         tools:ignore="MissingConstraints" />
 
+
     <TextView
         android:id="@+id/tv_niveaux"
         android:layout_width="wrap_content"
@@ -33,12 +34,11 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275"
+        app:layout_constraintVertical_bias="0.282"
         tools:ignore="MissingConstraints" />
-
 
     <ImageButton
         android:id="@+id/ib_niveaux"
@@ -47,26 +47,27 @@
         android:contentDescription="classes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399"
+        app:layout_constraintVertical_bias="0.448"
         app:srcCompat="@drawable/classes" />
+
 
     <TextView
         android:id="@+id/tv_allclasses"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font"
-        android:text="Classes"
+        android:text="Presence eleves"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275"
+        app:layout_constraintVertical_bias="0.277"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -76,26 +77,26 @@
         android:contentDescription="classes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398"
+        app:layout_constraintVertical_bias="0.448"
         app:srcCompat="@drawable/allclasse" />
-
 
     <TextView
         android:id="@+id/tv_profPresence"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amaranth_bold"
-        android:text="Presence Professeur"
+        android:fontFamily="@font/font"
+        android:text="Presence profrsseur"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595"
+        app:layout_constraintVertical_bias="0.646"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -108,7 +109,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792"
+        app:layout_constraintVertical_bias="0.871"
         app:srcCompat="@drawable/attendance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
