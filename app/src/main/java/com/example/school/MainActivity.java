@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-
+//Hello from the testMain
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button loginButton;
