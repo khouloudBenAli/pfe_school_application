@@ -20,23 +20,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-//Hello from the testMain
-<<<<<<< HEAD
+
+
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button loginButton;
-=======
-    static EditText usernameEditText;
-    static EditText passwordEditText;
-    static Button loginButton;
->>>>>>> testMain
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final String[] id_prof = {""};
 
         usernameEditText = findViewById(R.id.username_edit_text);
         passwordEditText = findViewById(R.id.password_edit_text);
@@ -59,21 +52,17 @@ public class MainActivity extends AppCompatActivity {
                                     int success = jsonObject.getInt("success");
                                     int type = jsonObject.getInt("type");
                                     String message = jsonObject.getString("message");
-
-                                    id_prof[0] = jsonObject.getString("id_prof");
-                                    Intent intent;
+                                    // String typemsg = jsonObject.getString("typemsg");
                                     if (success == 1) {
                                         if (type == 1) {
                                             // Login successful for admin, navigate to the activity espace
-                                             intent = new Intent(MainActivity.this, admin.class);
-                                            intent.putExtra("id_prof", id_prof);
+                                            Intent intent = new Intent(MainActivity.this, admin.class);
                                             startActivity(intent);
                                             finish();
                                         } else if (type == 2) {
                                             // Login successful for professeur, navigate to the activity espaceProf
-                                             intent = new Intent(MainActivity.this, users.class);
+                                            Intent intent = new Intent(MainActivity.this, users.class);
                                             startActivity(intent);
-                                            //intent.putExtra("id_prof", id_prof);
                                             finish();
                                         } else {
                                             // Login failed, show an error message
