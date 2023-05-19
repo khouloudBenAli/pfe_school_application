@@ -21,9 +21,15 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 //Hello from the testMain
+<<<<<<< HEAD
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button loginButton;
+=======
+    static EditText usernameEditText;
+    static EditText passwordEditText;
+    static Button loginButton;
+>>>>>>> testMain
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
