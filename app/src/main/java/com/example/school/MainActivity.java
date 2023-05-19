@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //general comment
         setContentView(R.layout.activity_main); //khouloud thb mazen
 
         usernameEditText = findViewById(R.id.username_edit_text);
