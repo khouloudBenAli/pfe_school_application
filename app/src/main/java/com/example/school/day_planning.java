@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class day_planning extends AppCompatActivity {
+    String id_prof;
 
     ProgressDialog dialog;
     JSONParser parser =new JSONParser() ;
@@ -33,38 +34,45 @@ public class day_planning extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_day_planning);
 
+        id_prof = getIntent().getStringExtra("id_prof");
+
         ls = findViewById(R.id.lst_seance);
 
         int itemIndex = getIntent().getIntExtra("item_index", 0);
         String phpFile;
         switch (itemIndex) {
             case 0:
-                phpFile = "http://192.168.208.154/user/days/monday.php";
+                phpFile = "http://192.168.77.192/user/days/monday.php";
                 break;
             case 1:
-                phpFile = "http://192.168.208.154/user/days/tuesday.php";
+                phpFile = "http://192.168.77.192/user/days/tuesday.php";
                 break;
             case 2:
-                phpFile = "http://192.168.208.154/user/days/wednesday.php";
+                phpFile = "http://192.168.77.192/user/days/wednesday.php";
                 break;
             case 3:
-                phpFile = "http://192.168.208.154/user/days/thursday.php";
+                phpFile = "http://192.168.77.192/user/days/thursday.php";
                 break;
             case 4:
-                phpFile = "http://192.168.208.154/user/days/friday.php";
+                phpFile = "http://192.168.77.192/user/days/friday.php";
                 break;
             case 5:
-                phpFile = "http://192.168.208.154/user/days/saturday.php";
+                phpFile = "http://192.168.77.192/user/days/saturday.php";
                 break;
             default:
                 throw new IllegalArgumentException("Invalid itemIndex: " + itemIndex);
         }
 
-
-        new DisplayTask().execute(phpFile);
+        new DisplayTask(id_prof).execute(phpFile, id_prof);
+        //new DisplayTask(id_prof).execute(phpFile);
     }
 
     class DisplayTask extends AsyncTask<String, String, JSONObject> {
+        private String idProf;
+
+        public DisplayTask(String idProf) {
+            this.idProf = idProf;
+        }
 
         // show a progress dialog before executing the task
         @Override
@@ -79,7 +87,10 @@ public class day_planning extends AppCompatActivity {
         @Override
         protected JSONObject doInBackground(String... args) {
             String phpFile = args[0];
+            String idProf = args[1]; // Retrieve the id_prof value from the arguments
             HashMap<String, String> map = new HashMap<String, String>();
+            // Add id_prof to the request parameters
+            map.put("id_prof", idProf);
             return parser.makeHttpRequest(phpFile, "GET", map);
         }
 

@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final String[] id_prof = {""};
+        String id_prof ;
 
         usernameEditText = findViewById(R.id.username_edit_text);
         passwordEditText = findViewById(R.id.password_edit_text);
@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
                                     int type = jsonObject.getInt("type");
                                     String message = jsonObject.getString("message");
 
-                                    id_prof[0] = jsonObject.getString("id_prof");
+                                    String id_prof = jsonObject.getString("id_prof");
+
+                                    //id_prof[0] = jsonObject.getString("id_prof");
                                     Intent intent;
                                     if (success == 1) {
                                         if (type == 1) {
@@ -66,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
                                         } else if (type == 2) {
                                             // Login successful for professeur, navigate to the activity espaceProf
                                              intent = new Intent(MainActivity.this, users.class);
-                                            startActivity(intent);
                                             intent.putExtra("id_prof", id_prof);
+                                            startActivity(intent);
+
                                             finish();
                                         } else {
                                             // Login failed, show an error message

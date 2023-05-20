@@ -29,6 +29,7 @@ public class users extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 Intent intent = new Intent(users.this , schedule.class);
+                intent.putExtra("id_prof", id_prof);
                 startActivity(intent);
 
             }
@@ -38,6 +39,7 @@ public class users extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(users.this,presence_prof.class);
+                i.putExtra("id_prof", id_prof);
                 startActivity(i);
             }
         });
@@ -46,6 +48,7 @@ public class users extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(users.this,presence_student.class);
+                intent.putExtra("id_prof", id_prof);
                 startActivity(intent);
             }
         });

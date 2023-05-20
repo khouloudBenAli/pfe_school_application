@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class presence_student extends AppCompatActivity {
+    String id_prof;
     ListView ls_presence ;
     ProgressDialog dialog;
     JSONParser parser =new JSONParser() ;
@@ -27,6 +28,9 @@ public class presence_student extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presence_student);
+
+        id_prof = getIntent().getStringExtra("id_prof");
+
         ls_presence=findViewById(R.id.lst_presence_student);
         new PresenceProf().execute();
     }
@@ -44,6 +48,7 @@ public class presence_student extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             HashMap<String,String> map=new HashMap<String,String>();
+            map.put("id_prof", id_prof); // Add id_prof to the map
 
             JSONObject object= parser.makeHttpRequest("http://192.168.77.192/user/presence/presence_student.php","GET",map);
             try {

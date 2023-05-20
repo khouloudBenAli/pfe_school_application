@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class schedule extends AppCompatActivity {
-
+    String id_prof;
     String daysListe[]={"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"};
     int daysImages[] = { R.drawable.monday , R.drawable.tuesday , R.drawable.wednesday, R.drawable.thursday , R.drawable.friday , R.drawable.saturday };
     ListView lsdays ;
@@ -35,12 +35,15 @@ public class schedule extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
 
+        id_prof = getIntent().getStringExtra("id_prof");
+
         lsdays=findViewById(R.id.schedule_ls);
         lsdays.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int itemIndex, long l) {
                 Intent intent = new Intent(schedule.this, day_planning.class);
                 intent.putExtra("item_index", itemIndex);
+                intent.putExtra("id_prof", id_prof);
                 startActivity(intent);
             }
         });
