@@ -54,6 +54,10 @@
             android:name=".schedule"
             android:exported="false" />
         <activity
+            android:name=".access_control"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
