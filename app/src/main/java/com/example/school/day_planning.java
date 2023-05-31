@@ -42,22 +42,22 @@ public class day_planning extends AppCompatActivity {
         String phpFile;
         switch (itemIndex) {
             case 0:
-                phpFile = "http://192.168.77.192/user/days/monday.php";
+                phpFile = "http://192.168.163.154/user/days/monday.php";
                 break;
             case 1:
-                phpFile = "http://192.168.77.192/user/days/tuesday.php";
+                phpFile = "http://192.168.163.154/user/days/tuesday.php";
                 break;
             case 2:
-                phpFile = "http://192.168.77.192/user/days/wednesday.php";
+                phpFile = "http://192.168.163.154/user/days/wednesday.php";
                 break;
             case 3:
-                phpFile = "http://192.168.77.192/user/days/thursday.php";
+                phpFile = "http://192.168.163.154/user/days/thursday.php";
                 break;
             case 4:
-                phpFile = "http://192.168.77.192/user/days/friday.php";
+                phpFile = "http://192.168.163.154/user/days/friday.php";
                 break;
             case 5:
-                phpFile = "http://192.168.77.192/user/days/saturday.php";
+                phpFile = "http://192.168.163.154/user/days/saturday.php";
                 break;
             default:
                 throw new IllegalArgumentException("Invalid itemIndex: " + itemIndex);

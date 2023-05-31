@@ -50,7 +50,7 @@ public class presence_student extends AppCompatActivity {
             HashMap<String,String> map=new HashMap<String,String>();
             map.put("id_prof", id_prof); // Add id_prof to the map
 
-            JSONObject object= parser.makeHttpRequest("http://192.168.77.192/user/presence/presence_student.php","GET",map);
+            JSONObject object= parser.makeHttpRequest("http://192.168.163.154/user/presence/presence_student.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)

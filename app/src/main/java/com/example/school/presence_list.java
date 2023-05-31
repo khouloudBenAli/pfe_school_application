@@ -114,7 +114,7 @@ public class presence_list extends AppCompatActivity {
                         phpFile = "http://192.168.77.192/user/admin/2BS1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.77.192/user/admin/2BS2.php";
+                        phpFile = "http://192.168.77.192 /user/admin/2BS2.php";
                         break;
                     case 2:
                         phpFile = "http://192.168.1.103/user/admin/2BS3.php";

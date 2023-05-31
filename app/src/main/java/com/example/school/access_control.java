@@ -46,7 +46,7 @@ public class access_control extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             HashMap<String,String> map=new HashMap<String,String>();
-            JSONObject object= parser.makeHttpRequest("http://192.168.77.192/user/admin/access_control.php","GET",map);
+            JSONObject object= parser.makeHttpRequest("http://192.168.163.154/user/accessControl_accessHistorique/access_control.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)

@@ -25,120 +25,149 @@
        tools:ignore="MissingConstraints" />
 
 
-   <TextView
-       android:id="@+id/tv_niveaux"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:fontFamily="@font/font"
-       android:text="Niveaux"
-       android:textColor="@color/black"
-       android:textSize="25dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.107"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.18"
-       tools:ignore="MissingConstraints" />
+ <TextView
+     android:id="@+id/tv_niveaux"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/font"
+     android:text="Niveaux"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.183"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.163"
+     tools:ignore="MissingConstraints" />
 
-   <ImageButton
-       android:id="@+id/ib_niveaux"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:contentDescription="classes"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.061"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.284"
-       app:srcCompat="@drawable/classes" />
+ <ImageButton
+     android:id="@+id/ib_niveaux"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:contentDescription="classes"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.113"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.255"
+     app:srcCompat="@drawable/classes" />
 
-   <TextView
-       android:id="@+id/tv_allclasses"
-       android:layout_width="150dp"
-       android:layout_height="wrap_content"
-       android:fontFamily="@font/font"
-       android:text="Presence eleves"
-       android:textColor="@color/black"
-       android:textSize="25dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="1.0"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.169"
-       tools:ignore="MissingConstraints" />
+ <TextView
+     android:id="@+id/tv_allclasses"
+     android:layout_width="90dp"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/font"
+     android:text="Presence eleves"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.915"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.168"
+     tools:ignore="MissingConstraints" />
 
-   <ImageButton
-       android:id="@+id/ib_classes"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:contentDescription="classes"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.938"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.284"
-       app:srcCompat="@drawable/allclasse" />
+ <ImageButton
+     android:id="@+id/ib_classes"
+     android:layout_width="116dp"
+     android:layout_height="118dp"
+     android:contentDescription="classes"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.908"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.267"
+     app:srcCompat="@drawable/allclasse" />
 
-   <TextView
-       android:id="@+id/tv_profPresence"
-       android:layout_width="160dp"
-       android:layout_height="wrap_content"
-       android:fontFamily="@font/font"
-       android:text="Presence profrsseur"
-       android:textColor="@color/black"
-       android:textSize="25dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.063"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       tools:ignore="MissingConstraints" />
+ <TextView
+     android:id="@+id/tv_profPresence"
+     android:layout_width="105dp"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/font"
+     android:text="Presence profrsseur"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.081"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.755"
+     tools:ignore="MissingConstraints" />
 
-   <ImageButton
-       android:id="@+id/ib_attendance"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:contentDescription="classes"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.061"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.695"
-       app:srcCompat="@drawable/attendance" />
+ <ImageButton
+     android:id="@+id/ib_attendance"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:contentDescription="classes"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.056"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.973"
+     app:srcCompat="@drawable/attendance" />
 
-    <TextView
-        android:id="@+id/tv_controlAcces"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amaranth_bold"
-        android:text="Control d'acces"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.492"
-        tools:ignore="MissingConstraints" />
+ <TextView
+     android:id="@+id/tv_controlAcces"
+     android:layout_width="90dp"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/font"
+     android:text="Control d'acces"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.576"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.447"
+     tools:ignore="MissingConstraints" />
 
-    <ImageButton
-      android:id="@+id/ib_controlAcces"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:contentDescription="asses"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.938"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.695"
-      app:srcCompat="@drawable/controldacces" />
+ <ImageButton
+     android:id="@+id/ib_controlAcces"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:contentDescription="asses"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.565"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.608"
+     app:srcCompat="@drawable/controldacces" />
 
+ <TextView
+     android:id="@+id/tv_accessHistorique"
+     android:layout_width="110dp"
+     android:layout_height="wrap_content"
+     android:fontFamily="@font/font"
+     android:text="Historique d'acces"
+     android:textColor="@color/black"
+     android:textSize="20dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.95"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.755"
+     tools:ignore="MissingConstraints" />
+
+ <ImageButton
+     android:id="@+id/ib_historique"
+     android:layout_width="128dp"
+     android:layout_height="128dp"
+     android:contentDescription="classes"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.946"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.973"
+     app:srcCompat="@drawable/historiquedaccess" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
