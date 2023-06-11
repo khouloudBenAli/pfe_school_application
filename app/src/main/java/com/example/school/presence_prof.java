@@ -51,7 +51,7 @@ public class presence_prof extends AppCompatActivity {
             HashMap<String,String> map=new HashMap<String,String>();
             map.put("id_prof", id_prof); // Add id_prof to the map
 
-            JSONObject object= parser.makeHttpRequest("http://192.168.163.154/user/presence/presence_prof.php","GET",map);
+            JSONObject object= parser.makeHttpRequest("http://192.168.1.103/user/presence/presence_prof.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)
@@ -61,9 +61,10 @@ public class presence_prof extends AppCompatActivity {
                     {
                         JSONObject pf=prof.getJSONObject(i);
                         HashMap<String,String> m=new HashMap<String,String>();
-                        m.put("id_prof",pf.getString("id_prof"));
-                        m.put("id_seance",pf.getString("id_seance"));
+                        m.put("full_name",pf.getString("full_name"));
                         m.put("status_prof",pf.getString("status_prof"));
+                        m.put("jour",pf.getString("jour"));
+                        m.put("num_seance",pf.getString("num_seance"));
 
 
                         values.add(m);
@@ -87,8 +88,8 @@ public class presence_prof extends AppCompatActivity {
             Log.e("useeeer", values.toString());
 
             SimpleAdapter adapter=new SimpleAdapter(presence_prof.this,values,R.layout.item_presence_prof,
-                    new String[] {"id_prof","id_seance","status_prof"},
-                    new int[]   {R.id.lsidprof , R.id.lsidseance, R.id.lsstatusprof  } );
+                    new String[] {"full_name","status_prof","jour" , "num_seance"},
+                    new int[]   {R.id.lsfullname , R.id.lsstatusprof, R.id.lsjour ,R.id.lsnumseance   } );
             ls.setAdapter(adapter);
 
         }

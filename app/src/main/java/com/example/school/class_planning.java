@@ -48,22 +48,22 @@ public class class_planning extends AppCompatActivity {
         String phpFile;
         switch (itemIndex) {
             case 0:
-                phpFile = "http://192.168.163.154/user/classes/premier.php";
+                phpFile = "http://192.168.1.103/user/classes/premier.php";
                 break;
             case 1:
-                phpFile = "http://192.168.163.154/user/classes/deuxieme.php";
+                phpFile = "http://192.168.1.103/user/classes/deuxieme.php";
                 break;
             case 2:
-                phpFile = "http://192.168.163.154/user/classes/troisieme.php";
+                phpFile = "http://192.168.1.103/user/classes/troisieme.php";
                 break;
             case 3:
-                phpFile = "http://192.168.163.154/user/classes/quatrieme.php";
+                phpFile = "http://192.168.1.103/user/classes/quatrieme.php";
                 break;
             case 4:
-                phpFile = "http://192.168.163.154/user/classes/cinquieme.php";
+                phpFile = "http://192.168.1.103/user/classes/cinquieme.php";
                 break;
             case 5:
-                phpFile = "http://192.168.163.154/user/classes/sixieme.php";
+                phpFile = "http://192.168.1.103/user/classes/sixieme.php";
                 break;
             default:
                 throw new IllegalArgumentException("Invalid itemIndex: " + itemIndex);

@@ -38,13 +38,13 @@ public class salle_number extends AppCompatActivity {
         String phpFile;
         switch (IndexSalles) {
             case 0:
-                phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/Salles/sallesA.php";
+                phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/Salles/sallesA.php";
                 break;
             case 1:
-                phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/Salles/sallesB.php";
+                phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/Salles/sallesB.php";
                 break;
             case 2:
-                phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/Salles/sallesC.php";
+                phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/Salles/sallesC.php";
                 break;
             default:
                 throw new IllegalArgumentException("Invalid itemIndex: " + IndexSalles);

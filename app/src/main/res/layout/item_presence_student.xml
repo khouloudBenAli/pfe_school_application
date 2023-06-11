@@ -6,13 +6,13 @@
     android:background="#BFBFBF">
 
     <TextView
-        android:id="@+id/lsidstudent"
+        android:id="@+id/lsname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/lsidseance"
+        android:id="@+id/lslastname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
@@ -22,6 +22,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
+    <TextView
+        android:id="@+id/lsnum_seance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/lsjour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
 
 
 </LinearLayout>

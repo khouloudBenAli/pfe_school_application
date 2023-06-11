@@ -38,19 +38,19 @@ public class historique_salle extends AppCompatActivity {
             case 0:
                 switch (IndexNumSalle) {
                     case 0:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleA1.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleA1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleA2.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleA2.php";
                         break;
                     case 2:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleA3.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleA3.php";
                         break;
                     case 3:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/TPA1.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/TPA1.php";
                         break;
                     case 4:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/TPA2.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/TPA2.php";
                         break;
 
                     default:
@@ -60,19 +60,19 @@ public class historique_salle extends AppCompatActivity {
             case 1:
                 switch (IndexNumSalle) {
                     case 0:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleB1.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleB1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleB2.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleB2.php";
                         break;
                     case 2:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleB3.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleB3.php";
                         break;
                     case 3:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/TPB1.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/TPB1.php";
                         break;
                     case 4:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/TPB2.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/TPB2.php";
                         break;
 
                     default:
@@ -82,10 +82,10 @@ public class historique_salle extends AppCompatActivity {
             case 2:
                 switch (IndexNumSalle) {
                     case 0:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleC1.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleC1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleC2.php";
+                        phpFile = "http://192.168.1.103/user/accessControl_accessHistorique/num_salles/salleC2.php";
                         break;
                     case 2:
                         phpFile = "http://192.168.163.154/user/accessControl_accessHistorique/num_salles/salleC3.php";

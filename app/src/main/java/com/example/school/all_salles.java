@@ -21,7 +21,7 @@ public class all_salles extends AppCompatActivity {
 
         lsSalles=findViewById(R.id.salles_list_ls);
 
-        ClassesAdapter_class_list classesAdapter = new ClassesAdapter_class_list(getApplicationContext(), sallesListe , sallesImages );
+        ClassesAdapter_historique classesAdapter = new ClassesAdapter_historique(getApplicationContext(), sallesListe , sallesImages );
         lsSalles.setAdapter(classesAdapter);
 
         lsSalles.setOnItemClickListener(new AdapterView.OnItemClickListener() {

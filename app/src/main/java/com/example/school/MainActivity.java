@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString().trim();
 
                 // Send the login request to the server using Volley
-                String url = "http://192.168.163.154/user/appLogin.php";
+                String url = "http://192.168.1.103/user/appLogin.php";
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                         new Response.Listener<String>() {
                             @Override
