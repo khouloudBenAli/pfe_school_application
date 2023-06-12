@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 
 public class users extends AppCompatActivity {
 
-    ImageButton student_presence , schedule_prof,prof_presence ;
+    ImageButton student_presence , schedule_prof,prof_presence ,notification_prof ;
     String id_prof;
 
     @Override
@@ -24,6 +24,7 @@ public class users extends AppCompatActivity {
         schedule_prof=findViewById(R.id.scheduleProf) ;
         prof_presence=findViewById(R.id.PresenceProf) ;
         student_presence=findViewById(R.id.PresenceStudent);
+        notification_prof = findViewById(R.id.ib_avis_notification_prof);
 
         schedule_prof.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,13 @@ public class users extends AppCompatActivity {
                 intent.putExtra("id_prof", id_prof);
                 startActivity(intent);
 
+            }
+        });
+        notification_prof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(users.this,avis_list.class);
+                startActivity(intent);
             }
         });
 

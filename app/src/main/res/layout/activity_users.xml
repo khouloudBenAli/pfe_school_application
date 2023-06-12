@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BFBFBF"
     tools:context=".users"
-    android:background="#BFBFBF">
+    tools:layout_editor_absoluteX="3dp"
+    tools:layout_editor_absoluteY="57dp">
 
     <TextView
         android:id="@+id/txtView_all_matiere"
@@ -80,6 +82,49 @@
         app:layout_constraintVertical_bias="0.405"
         app:srcCompat="@drawable/eleves" />
 
+    <ImageButton
+        android:id="@+id/PresenceProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="prof"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922"
+        app:srcCompat="@drawable/prof" />
+
+    <ImageButton
+        android:id="@+id/ib_avis_notification_prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="avis_notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922"
+        app:srcCompat="@drawable/notification" />
+
+
+    <TextView
+        android:id="@+id/tv_notification_prof"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:text="Avis et Notification"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/tv_prof"
         android:layout_width="wrap_content"
@@ -90,24 +135,11 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.626"
+        app:layout_constraintVertical_bias="0.648"
         tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/PresenceProf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="prof"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828"
-        app:srcCompat="@drawable/prof" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

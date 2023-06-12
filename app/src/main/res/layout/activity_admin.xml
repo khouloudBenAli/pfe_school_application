@@ -113,7 +113,7 @@
      app:srcCompat="@drawable/attendance" />
 
  <TextView
-     android:id="@+id/tv_controlAcces"
+     android:id="@+id/tv_Avis_Notification"
      android:layout_width="120dp"
      android:layout_height="wrap_content"
      android:fontFamily="@font/font"
@@ -129,17 +129,17 @@
      tools:ignore="MissingConstraints" />
 
  <ImageButton
-     android:id="@+id/ib_controlAcces"
+     android:id="@+id/ib_Avis_Notification"
      android:layout_width="128dp"
      android:layout_height="128dp"
-     android:contentDescription="asses"
+     android:contentDescription="avisNotification"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
      app:layout_constraintHorizontal_bias="0.565"
      app:layout_constraintStart_toStartOf="parent"
      app:layout_constraintTop_toTopOf="parent"
      app:layout_constraintVertical_bias="0.635"
-     app:srcCompat="@drawable/avis" />
+     app:srcCompat="@drawable/avisetnotification" />
 
  <TextView
      android:id="@+id/tv_accessHistorique"

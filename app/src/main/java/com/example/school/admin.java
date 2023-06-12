@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class admin extends AppCompatActivity {
-    ImageButton all_classes ,  all_niveaux , attendance , acces , historique ;
+    ImageButton all_classes ,  all_niveaux , attendance , AvisNotification , historique ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,13 +18,13 @@ public class admin extends AppCompatActivity {
         all_niveaux=findViewById(R.id.ib_niveaux);
         all_classes=findViewById(R.id.ib_classes);
         attendance=findViewById(R.id.ib_attendance);
-        acces=findViewById(R.id.ib_controlAcces);
+        AvisNotification=findViewById(R.id.ib_Avis_Notification);
         historique=findViewById(R.id.ib_historique);
 
-        acces.setOnClickListener(new View.OnClickListener() {
+        AvisNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(admin.this,access_control.class);
+                Intent intent = new Intent(admin.this,avis_notification.class);
                 startActivity(intent);
             }
         });

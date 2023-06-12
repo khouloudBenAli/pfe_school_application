@@ -16,29 +16,30 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class access_control extends AppCompatActivity {
+public class avis_list extends AppCompatActivity {
 
+    ListView ls_avis ;
     ProgressDialog dialog;
     JSONParser parser =new JSONParser() ;
     ArrayList<HashMap<String,String>> values= new ArrayList<HashMap<String,String>>() ;
     int success ;
-    ListView ls ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_access_control);
+        setContentView(R.layout.activity_avis_list);
 
-        ls = findViewById(R.id.lst_control_access);
-        new accesControl().execute();
+        ls_avis = findViewById(R.id.lst_avis);
+        new AllAvis().execute();
     }
 
-    class accesControl extends AsyncTask<String,String,String>
+    class AllAvis extends AsyncTask<String,String,String>
     {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog=new ProgressDialog(access_control.this);
+            dialog=new ProgressDialog(avis_list.this);
             dialog.setMessage("Wait please ..");
             dialog.show();
         }
@@ -46,31 +47,26 @@ public class access_control extends AppCompatActivity {
         @Override
         protected String doInBackground(String... strings) {
             HashMap<String,String> map=new HashMap<String,String>();
-            JSONObject object= parser.makeHttpRequest("http://192.168.1.103/user/accessControl_accessHistorique/access_control.php","GET",map);
+
+            JSONObject object= parser.makeHttpRequest("http://192.168.1.103/user/avis_notification/avis_list.php","GET",map);
             try {
                 success=object.getInt("success");
                 if (success==1)
                 {
-                    JSONArray acces=object.getJSONArray("acces");
-                    for(int i=0 ;i<acces.length();i++)
+                    JSONArray avis=object.getJSONArray("avis");
+                    for(int i=0 ;i<avis.length();i++)
                     {
-                        JSONObject ps=acces.getJSONObject(i);
+                        JSONObject ev=avis.getJSONObject(i);
                         HashMap<String,String> m=new HashMap<String,String>();
-                        m.put("id_prof",ps.getString("id_prof"));
-                        m.put("full_name",ps.getString("full_name"));
-                        m.put("id_salle",ps.getString("id_salle"));
-
+                        m.put("avis",ev.getString("avis"));
+                        m.put("date_avis",ev.getString("date_avis"));
                         values.add(m);
-
-
                     }
                 }
 
             } catch (JSONException e) {
                 throw new RuntimeException(e);
             }
-
-
             return null;
         }
 
@@ -78,12 +74,12 @@ public class access_control extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             dialog.cancel();
-            Log.e("useeeer", values.toString());
+            Log.e("resultat_notification", values.toString());
 
-            SimpleAdapter adapter=new SimpleAdapter(access_control.this,values,R.layout.item_access_control,
-                    new String[] {"id_prof","full_name","id_salle"},
-                    new int[]   {R.id.lsidprof , R.id.lsidfullname, R.id.lsidsalle  } );
-            ls.setAdapter(adapter);
+            SimpleAdapter adapter=new SimpleAdapter(avis_list.this,values,R.layout.item_avis,
+                    new String[] {"avis","date_avis"},
+                    new int[]   {R.id.lsavis , R.id.lsdate_avis } );
+            ls_avis.setAdapter(adapter);
 
         }
     }
