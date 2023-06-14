@@ -39,22 +39,22 @@ public class presence_list extends AppCompatActivity {
             case 0:
                 switch (IndexSeance) {
                     case 0:
-                        phpFile = "http://192.168.1.103/user/admin/1AS1.php";
+                        phpFile = "http://192.168.1.103/user/admin/1A/1AS1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.1.103/user/admin/1AS2.php";
+                        phpFile = "http://192.168.1.103/user/admin/1A/1AS2.php";
                         break;
                     case 2:
-                        phpFile = "http://192.168.1.103/user/admin/1AS3.php";
+                        phpFile = "http://192.168.1.103/user/admin/1A/1AS3.php";
                         break;
                     case 3:
-                        phpFile = "http://192.168.1.103/user/admin/1AS4.php";
+                        phpFile = "http://192.168.1.103/user/admin/1A/1AS4.php";
                         break;
                     case 4:
-                        phpFile = "http://192.168.1.103/user/admin/1AS5.php";
+                        phpFile = "http://192.168.1.103/user/admin/1A/1AS5.php";
                         break;
                     case 5:
-                        phpFile = "http://192.168.1.103/user/admin/1AS6.php";
+                        phpFile = "http://192.168.1.103/user/admin/1A/1AS6.php";
                         break;
                     default:
                         throw new IllegalArgumentException("Invalid IndexSeance: " + IndexSeance);
@@ -93,16 +93,16 @@ public class presence_list extends AppCompatActivity {
                         phpFile = "http://192.168.1.103/user/admin/2AS2.php";
                         break;
                     case 2:
-                        phpFile = "http://192.168.77.192/user/admin/2AS3.php";
+                        phpFile = "http://192.168.1.103/user/admin/2AS3.php";
                         break;
                     case 3:
-                        phpFile = "http://192.168.77.192/user/admin/2AS4.php";
+                        phpFile = "http://192.168.1.103/user/admin/2AS4.php";
                         break;
                     case 4:
-                        phpFile = "http://192.168.77.192/user/admin/2AS5.php";
+                        phpFile = "http://192.168.1.103/user/admin/2AS5.php";
                         break;
                     case 5:
-                        phpFile = "http://192.168.77.192/user/admin/2AS6.php";
+                        phpFile = "http://192.168.1.103/user/admin/2AS6.php";
                         break;
                     default:
                         throw new IllegalArgumentException("Invalid IndexSeance: " + IndexSeance);
@@ -114,7 +114,7 @@ public class presence_list extends AppCompatActivity {
                         phpFile = "http://192.168.1.103/user/admin/2BS1.php";
                         break;
                     case 1:
-                        phpFile = "http://192.168.77.192 /user/admin/2BS2.php";
+                        phpFile = "http://192.168.1.103/user/admin/2BS2.php";
                         break;
                     case 2:
                         phpFile = "http://192.168.1.103/user/admin/2BS3.php";

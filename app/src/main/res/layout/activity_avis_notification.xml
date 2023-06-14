@@ -67,7 +67,7 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613"
+        app:layout_constraintVertical_bias="0.604"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -77,10 +77,10 @@
         android:contentDescription="avis_notification_admin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815"
+        app:layout_constraintVertical_bias="0.871"
         app:srcCompat="@drawable/notification" />
 
 

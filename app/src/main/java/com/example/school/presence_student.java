@@ -64,6 +64,7 @@ public class presence_student extends AppCompatActivity {
                         m.put("lastname",ps.getString("lastname"));
                         m.put("status_student",ps.getString("status_student"));
                         m.put("num_seance",ps.getString("num_seance"));
+                        m.put("id_classe",ps.getString("id_classe"));
                         m.put("jour",ps.getString("jour"));
 
                         values.add(m);
@@ -85,8 +86,8 @@ public class presence_student extends AppCompatActivity {
             Log.e("useeeer", values.toString());
 
             SimpleAdapter adapter=new SimpleAdapter(presence_student.this,values,R.layout.item_presence_student,
-                    new String[] {"name","lastname","status_student","num_seance","jour"},
-                    new int[]   {R.id.lsname , R.id.lslastname, R.id.lsstatusstudent , R.id.lsnum_seance ,R.id.lsjour  } );
+                    new String[] {"name","lastname","status_student","num_seance","id_classe","jour"},
+                    new int[]   {R.id.lsname , R.id.lslastname, R.id.lsstatusstudent , R.id.lsnum_seance ,R.id.lsclasse , R.id.lsjour  } );
             ls_presence.setAdapter(adapter);
 
         }

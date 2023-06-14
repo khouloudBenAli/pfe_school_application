@@ -25,8 +25,8 @@ import java.util.HashMap;
 
 public class schedule extends AppCompatActivity {
     String id_prof;
-    String daysListe[]={"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"};
-    int daysImages[] = { R.drawable.monday , R.drawable.tuesday , R.drawable.wednesday, R.drawable.thursday , R.drawable.friday , R.drawable.saturday };
+    String daysListe[]={"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"};
+    int daysImages[] = { R.drawable.monday , R.drawable.tuesday , R.drawable.wednesday, R.drawable.thursday , R.drawable.friday };
     ListView lsdays ;
 
     @SuppressLint("WrongViewCast")
