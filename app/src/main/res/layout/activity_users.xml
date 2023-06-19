@@ -13,132 +13,119 @@
         android:id="@+id/txtView_all_matiere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/amaranth_bold"
         android:text="Espace Professeur"
         android:textColor="@color/black"
+
         android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.104"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_emploi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/amaranth_bold"
         android:text="Emploi du temps"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_all_matiere"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/scheduleProf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="emploi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emploi"
         app:srcCompat="@drawable/schedule" />
 
     <TextView
         android:id="@+id/tv_eleve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
         android:fontFamily="@font/amaranth_bold"
         android:text="Presence Eleve"
+
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_all_matiere"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/PresenceStudent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
         android:contentDescription="eleve"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.899"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eleve"
         app:srcCompat="@drawable/eleves" />
+
 
     <ImageButton
         android:id="@+id/PresenceProf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="prof"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prof"
         app:srcCompat="@drawable/prof" />
 
     <ImageButton
         android:id="@+id/ib_avis_notification_prof"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
         android:contentDescription="avis_notification"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.922"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notification_prof"
         app:srcCompat="@drawable/notification" />
-
 
     <TextView
         android:id="@+id/tv_notification_prof"
-        android:layout_width="140dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/font"
+        android:layout_width="158dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/amaranth_bold"
         android:text="Avis et Notification"
         android:textColor="@color/black"
         android:textSize="23dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648"
+        app:layout_constraintTop_toBottomOf="@+id/PresenceStudent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_prof"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/amaranth_bold"
         android:text="Presence Professeuer"
         android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.648"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleProf"
         tools:ignore="MissingConstraints" />
 
 
